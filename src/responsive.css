@@ -1,0 +1,56 @@
+/* =========================
+   Mobile Responsiveness
+   ========================= */
+@media (max-width: 640px) {
+  /* Main container spacing */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Main GIFs */
+  img {
+    max-width: 90vw;
+    height: auto;
+  }
+
+  /* Headings */
+  h1 {
+    font-size: 1.8rem !important;
+    line-height: 1.2;
+  }
+
+  /* Buttons stack nicely */
+  .valentine-buttons,
+  .flex.flex-wrap.justify-center {
+    flex-direction: column !important;
+    gap: 12px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+
+  /* SweetAlert popup */
+  .swal2-popup {
+    width: 90% !important;
+    max-width: 380px !important;
+  }
+
+  .swal2-image {
+    max-height: 180px !important;
+  }
+
+  .swal2-title {
+    font-size: 1.4rem !important;
+  }
+
+  .swal2-html-container {
+    font-size: 0.95rem !important;
+  }
+
+  /* Tabs wrapping */
+  .flex.flex-wrap.justify-center.gap-2 {
+    gap: 6px;
+  }
+}
