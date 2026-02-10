@@ -5,22 +5,3 @@
 **AlwaysBeMine** is a delightful and romantic web template designed to ask someone special, "Will you be my Valentine?" With its cute design, charming animations, and heartfelt message, this website template offers a unique and memorable way to express your feelings. Whether you're celebrating Valentine's Day or just want to spread love, this project is sure to make the moment unforgettable.
 
 This template combines creativity and coding to create an experience that will leave a lasting impression. It's perfect for anyone looking to make their proposal or message stand out in a special & unique way. ❤️
-
-## ✨ Features
-
-- **Playful Animations**: Enjoy a fun, engaging user experience with cute and playful animations.
-- **Interactive Elements**: Add exciting touches such as animations, background music, or surprise pop-ups to personalize your message.
-- **Images**: Lovely images and heartwarming messages.
-- **Beautiful Tag Lines**: Attractive and Loving Tag Lines.
-- **Sharing Options**: Share your virtual card easily via:
-  - **Social Media**: Share directly on your favorite platforms.
-
-## 🚀 Getting Started
-
-To get started with this project, follow these steps:
-
-1. **Star the [Main Repository](https://github.com/UjjwalSaini07/AlwaysBeMine)**
-2. **Fork The [Repository](https://github.com/UjjwalSaini07/AlwaysBeMine) (If u Want to Contribute Then use this Step)**
-3. **Clone the repository**
-4. **Install the Dependancies `npm/pnpm install`**
-5. **Start the development server with `npm/pnpm run dev`**
