@@ -415,7 +415,7 @@ export default function Page() {
           </>
         )}
         <button
-          className="fixed top-10 right-10 md:bottom-10 md:right-10 bg-gray-200 p-1 mb-2 rounded-full hover:bg-gray-300"
+          className="fixed top-10 right-10 md:bottom-10 md:right-10 bg-gray-200 p-2 rounded-full hover:bg-gray-300 w-10 h-10 flex items-center justify-center"
           onClick={toggleMute}
         >
           {isMuted ? <BsVolumeMuteFill size={26} /> : <BsVolumeUpFill size={26} />}
