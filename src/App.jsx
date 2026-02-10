@@ -314,32 +314,45 @@ export default function Page() {
 
   return (
     <>
-      <div className="fixed top-0 left-0 w-screen h-screen -z-10">
-        <Spline scene="https://prod.spline.design/oSxVDduGPlsuUIvT/scene.splinecode" />
-        {/* <Spline scene="https://prod.spline.design/ZU2qkrU9Eyt1PHBx/scene.splinecode" /> */}
-      </div>
+      <div className="fixed top-0 left-0 w-screen h-screen -z-10 bg-gradient-to-br from-pink-200 via-red-200 to-pink-300"></div>
 
       {noCount > 16 && noCount < 25 && yesPressed == false && <MouseStealing />}
 
       <div className="overflow-hidden flex flex-col items-center justify-center pt-4 h-screen -mt-16 selection:bg-rose-600 selection:text-white text-zinc-900">
         {yesPressed && noCount>3 ? (
           <>
+            <div className="mt-8"></div>
             <img
               ref={gifRef}
-              className="h-[230px] rounded-lg"
+              className="h-[180px] md:h-[230px] rounded-lg"
               src={YesGifs[currentGifIndex]}
               alt="Yes Response"
             />
             <div
-  className="text-4xl md:text-6xl font-bold my-2"
-  style={{ fontFamily: "Charm, serif", fontWeight: "700", fontStyle: "normal" }}
+  className="text-4xl md:text-6xl font-bold my-2 text-center drop-shadow-lg"
+  style={{
+    fontFamily: "Charm, serif",
+    fontWeight: "700",
+    fontStyle: "normal",
+    textShadow: "2px 2px 4px rgba(0,0,0,0.3), 0 0 20px rgba(255,20,147,0.5)",
+    background: "linear-gradient(45deg, #ff69b4, #ff1493, #dc143c)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    backgroundClip: "text"
+  }}
 >
   I Love You So Much, Cutu ❤️
 </div>
 
 <div
-  className="text-4xl md:text-4xl font-bold my-1"
-  style={{ fontFamily: "Beau Rivage, serif", fontWeight: "500", fontStyle: "normal" }}
+  className="text-3xl md:text-5xl font-bold my-1 text-center drop-shadow-md"
+  style={{
+    fontFamily: "Beau Rivage, serif",
+    fontWeight: "500",
+    fontStyle: "normal",
+    textShadow: "1px 1px 2px rgba(0,0,0,0.2)",
+    color: "#8b0000"
+  }}
 >
   My heart chose you, now and forever.
 </div>
@@ -356,18 +369,26 @@ export default function Page() {
             />
             <img
               ref={gifRef}
-              className="h-[230px] rounded-lg"
+              className="h-[180px] sm:h-[220px] md:h-[230px] rounded-lg shadow-xl ring-2 ring-rose-200 hover:ring-rose-300 transition-all duration-300"
               src={Lovegif}
               alt="Love Animation"
             />
-            <h1 className="text-4xl md:text-6xl my-4 text-center">
+            <h1 className="text-2xl sm:text-4xl md:text-6xl my-4 text-center px-4 drop-shadow-lg animate-pulse" style={{
+              fontFamily: "Charm, serif",
+              fontWeight: "700",
+              textShadow: "2px 2px 4px rgba(0,0,0,0.3), 0 0 15px rgba(255,20,147,0.4)",
+              background: "linear-gradient(45deg, #ff69b4, #ff1493, #dc143c)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text"
+            }}>
               Hi Cutuu, Will you be my Valentine?
             </h1>
             <div className="flex flex-wrap justify-center gap-2 items-center">
               <button
                 onMouseEnter={handleMouseEnterYes}
                 onMouseLeave={handleMouseLeave}
-                className={`bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg mr-4`}
+                className={`bg-gradient-to-r from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 text-white font-bold py-3 px-6 rounded-full mr-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300`}
                 style={{ fontSize: yesButtonSize }}
                 onClick={handleYesClick}
               >
@@ -377,7 +398,7 @@ export default function Page() {
                 onMouseEnter={handleMouseEnterNo}
                 onMouseLeave={handleMouseLeave}
                 onClick={handleNoClick}
-                className="bg-rose-500 hover:bg-rose-600 rounded-lg text-white font-bold py-2 px-4"
+                className="bg-gradient-to-r from-rose-400 to-rose-600 hover:from-rose-500 hover:to-rose-700 rounded-full text-white font-bold py-3 px-6 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               >
                 {noCount === 0 ? "No" : getNoButtonText()}
               </button>
@@ -394,7 +415,7 @@ export default function Page() {
           </>
         )}
         <button
-          className="fixed bottom-10 right-10 bg-gray-200 p-1 mb-2 rounded-full hover:bg-gray-300"
+          className="fixed top-10 right-10 md:bottom-10 md:right-10 bg-gray-200 p-1 mb-2 rounded-full hover:bg-gray-300"
           onClick={toggleMute}
         >
           {isMuted ? <BsVolumeMuteFill size={26} /> : <BsVolumeUpFill size={26} />}
@@ -404,13 +425,3 @@ export default function Page() {
   );
 }
 
-
-
-
-
-
-
-
-// ! Pathways-
-// https://app.spline.design/file/48a9d880-40c9-4239-bd97-973aae012ee0
-// https://app.spline.design/file/72e6aee2-57ed-4698-afa7-430f8ed7bd87

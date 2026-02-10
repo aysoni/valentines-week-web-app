@@ -1,56 +1,39 @@
-/* =========================
-   Mobile Responsiveness
-   ========================= */
-@media (max-width: 640px) {
-  /* Main container spacing */
-  body {
-    overflow-x: hidden;
-  }
+/* Responsive styles for the Valentine app */
 
-  /* Main GIFs */
-  img {
-    max-width: 90vw;
-    height: auto;
+/* Enhanced mobile responsiveness */
+@media (max-width: 768px) {
+  .text-4xl {
+    font-size: 2rem;
   }
+  .text-6xl {
+    font-size: 3rem;
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
-  /* Headings */
-  h1 {
-    font-size: 1.8rem !important;
-    line-height: 1.2;
-  }
+/* Improved button styles */
+button {
+  transition: all 0.3s ease;
+}
 
-  /* Buttons stack nicely */
-  .valentine-buttons,
-  .flex.flex-wrap.justify-center {
-    flex-direction: column !important;
-    gap: 12px;
-  }
+button:hover {
+  transform: scale(1.05);
+}
 
-  button {
-    font-size: 1rem;
-    padding: 10px 16px;
-  }
+/* Better spacing and layout */
+.flex-col {
+  gap: 1rem;
+}
 
-  /* SweetAlert popup */
-  .swal2-popup {
-    width: 90% !important;
-    max-width: 380px !important;
-  }
+/* Enhanced visual effects */
+.selection\:bg-rose-600::selection {
+  background-color: #e11d48;
+  color: white;
+}
 
-  .swal2-image {
-    max-height: 180px !important;
-  }
-
-  .swal2-title {
-    font-size: 1.4rem !important;
-  }
-
-  .swal2-html-container {
-    font-size: 0.95rem !important;
-  }
-
-  /* Tabs wrapping */
-  .flex.flex-wrap.justify-center.gap-2 {
-    gap: 6px;
-  }
+/* Smooth animations */
+* {
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
