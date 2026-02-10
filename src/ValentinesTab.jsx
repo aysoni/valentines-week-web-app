@@ -12,8 +12,8 @@ import valentine from "./assets/GifData/tabs/valentines-day.gif";
 
 const days = [
     { day: 7, title: "Rose Day 🌹", img: rose, text: "A rose for the one who makes my life bloom 🌹" },
-    { day: 8, title: "Chocolate Day 🍫", img: chocolate, text: "Life is sweeter with you 🍫❤️" },
-    { day: 9, title: "Propose Day 💍", img: proposal, text: "I choose you today and forever 💍" },
+    { day: 9, title: "Chocolate Day 🍫", img: chocolate, text: "Life is sweeter with you 🍫❤️" },
+    { day: 8, title: "Propose Day 💍", img: proposal, text: "I choose you today and forever 💍" },
     { day: 10, title: "Teddy Day 🧸", img: teddy, text: "I’ll always be your teddy 🧸" },
     { day: 11, title: "Promise Day 🤞", img: promise, text: "I promise to love you endlessly 🤞" },
     { day: 12, title: "Hug Day 🤗", img: hug, text: "Here’s a warm hug just for you 🤗" },
